@@ -1,0 +1,33 @@
+
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  margin: 0 0 2px 0;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+  /* transform: rotate(.75turn); */
+}
+
+/* Specific to printed page. */
+@media print {
+  header {
+    display: none;
+  }
+  .page {
+    page-break-after: always;
+  }
+  footer {
+    display: none;
+  }
+}
