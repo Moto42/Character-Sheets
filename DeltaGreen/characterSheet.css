@@ -19,8 +19,24 @@
   /* transform: rotate(.75turn); */
 }
 
+
+@media screen, print {
+  /* heading for screen readers, that should not appear visualy on screen */
+  .reader-only {
+    display: none;
+  }
+}
+
+@media only speech {
+  /* hide certain elements from screen readers. */
+  /* for decorative text, or items that are repeated visualy that only need to be stated once. */
+  .reader-hide {
+    display: none;
+  }
+}
+
 /* Specific to printed page. */
-@media print {
+@media only print {
   header {
     display: none;
   }
