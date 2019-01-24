@@ -24,7 +24,8 @@
 
 .sidelabel {
 	font-size: 1rem;
-	writing-mode: sideways-lr;
+	writing-mode: vertical-lr;
+	transform: rotate(.5turn);
 }
 
 
