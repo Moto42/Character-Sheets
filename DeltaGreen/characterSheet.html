@@ -404,21 +404,49 @@
 					</h2>
 					<div class=""> <!-- Data Blocks -->
 						<div class=""> <!-- Personal Details -->
-							<div class="">
+							<div class="statLabel">
 								17. Personal Details and Notes
 							</div>
+							<textarea class="stat" name="detailsNotes" rows="8" cols="80"></textarea>
 						</div>
 						<div class=""> <!-- developments affecting home and family -->
-							<div class="">
+							<div class="statLabel">
 								18. Developments Which Affect Home and Family
 							</div>
+							<textarea class="stat" name="developments" rows="8" cols="80"></textarea>
 						</div>
 						<div class=""> <!-- Special Training -->
-							<div class="">
-								Special Training
+							<div class="training">
+								<div class="statLabel">
+									Special Training
+								</div>
+								<div class="statLabel">
+									Skill or Stat Used
+								</div>
 							</div>
-							<div class="">
-								Skill or Stat Used
+							<div class="traning">
+								<input class="stat" type="text" name="traningName1">
+								<input class="stat" type="text" name="traningStat1">
+							</div>
+							<div class="traning">
+								<input class="stat" type="text" name="traningName2">
+								<input class="stat" type="text" name="traningStat2">
+							</div>
+							<div class="traning">
+								<input class="stat" type="text" name="traningName3">
+								<input class="stat" type="text" name="traningStat3">
+							</div>
+							<div class="traning">
+								<input class="stat" type="text" name="traningName4">
+								<input class="stat" type="text" name="traningStat4">
+							</div>
+							<div class="traning">
+								<input class="stat" type="text" name="traningName5">
+								<input class="stat" type="text" name="traningStat5">
+							</div>
+							<div class="traning">
+								<input class="stat" type="text" name="traningName6">
+								<input class="stat" type="text" name="traningStat6">
 							</div>
 						</div>
 						<div class=""> <!-- section note -->
@@ -430,10 +458,16 @@
 					<h2 class="reader-only">Signatures</h2>
 					<div class=""> <!-- Data Blocks -->
 						<div class="">
-							20. Authorizing Officer
+							<div class="statLabel">
+								20. Authorizing Officer
+							</div>
+							<input class="signature" type="text" name="sigatureOfficer" value="">
 						</div>
 						<div class="">
-							21. Agent Signature
+							<div class="statLabel">
+								21. Agent Signature
+							</div>
+							<input class="signature" type="text" name="sigatureAgent" value="">
 						</div>
 					</div>
 				</section>
