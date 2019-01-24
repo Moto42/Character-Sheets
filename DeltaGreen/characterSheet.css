@@ -8,6 +8,10 @@
 	text-align: center;
 }
 
+.dataSection {
+	margin-top: .5rem;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
