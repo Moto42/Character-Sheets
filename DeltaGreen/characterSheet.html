@@ -13,31 +13,39 @@
 		<main>
 			<div class="page">
 				<h1 class="logo uppercase bg-dark">Delta Green</h1>
-				<section class="dataSection"> <!-- Personal Data -->
+				<section class="dataSection" id="dsection-personalData"> <!-- Personal Data -->
 					<h2 class="bg-dark sidelabel uppercase text-center">
 						Personal Data
 					</h2>
-					<div class=""> <!-- Data Blocks -->
-						<div class="">
-							1. Last Name, First Name (and alias or code name if applicable)
-						</div>
-						<div class="">
-							2. Profession (rank if applicable)
-						</div>
-						<div class="">
-							3. Employer
-						</div>
-						<div class="">
-							4. Nationality
-						</div>
-						<div class="">
-							5. Sex
-						</div>
-						<div class="">
-							6. Age and D.O.B.
-						</div>
-						<div class="">
-							7. Education and Occupational History
+					<div class="dataBlock-container"> <!-- Data Blocks -->
+						<div class="dataBlock">
+							<div class="stat">
+								1. Last Name, First Name (and alias or code name if applicable)
+								<input type="text" name="name">
+							</div>
+							<div class="stat">
+								2. Profession (rank if applicable)
+							</div>
+							<div class="stat">
+								3. Employer
+								<input type="text" name="Employer">
+							</div>
+							<div class="stat">
+								4. Nationality
+								<input type="text" name="Nationality">
+							</div>
+							<div class="stat">
+								5. Sex
+								<input type="text" name="Sex">
+							</div>
+							<div class="stat">
+								6. Age and D.O.B.
+								<input type="text" name="DOB">
+							</div>
+							<div class="stat">
+								7. Education and Occupational History
+								<input type="text" name="educationOccupation">
+							</div>
 						</div>
 					</div>
 				</section>
@@ -45,67 +53,78 @@
 					<h2 class="bg-dark sidelabel uppercase text-center">
 						Statistical Data
 					</h2>
-					<div class=""> <!-- Data Blocks -->
-						<div class=""> <!-- Statistics -->
-							<div class="">
+					<div class="dataBlock-container"> <!-- Data Blocks -->
+						<div class="dataBlock"> <!-- Statistics -->
+							<div class="statLabel">
 								8. Statitics
 							</div>
-							<div class="">
+							<div class="statLabel">
 								Score
 							</div>
-							<div class="">
+							<div class="statLabel">
 								x5
 							</div>
-							<div class="">
-								Distinguishing Features
+							<div class="statLabel">
+								Distinguishing Feature
 							</div>
-							<div class="">
+							<div class="stat">
 								Strength (STR)
+								<input type="text" name="strength">
 							</div>
-							<div class="">
+							<div class="stat">
 								Constitution (CON)
+								<input type="text" name="constitution">
 							</div>
-							<div class="">
+							<div class="stat">
 								Dexterity (DEX)
+								<input type="text" name="dexterity">
 							</div>
-							<div class="">
+							<div class="stat">
 								Intelligence (INT)
+								<input type="text" name="intelligence">
 							</div>
-							<div class="">
+							<div class="stat">
 								Power (POW)
+								<input type="text" name="power">
 							</div>
-							<div class="">
+							<div class="stat">
 								Charisma (CHA)
+								<input type="text" name="charisma">
 							</div>
 						</div>
 						<div class=""> <!-- derived attributes -->
-							<div class="">
+							<div class="statLabel">
 								9. Derived Attributes
 							</div>
-							<div class="">
+							<div class="statLabel">
 								Maximum
 							</div>
-							<div class="">
+							<div class="statLabel">
 								Current
 							</div>
-							<div class="">
+							<div class="stat">
 								Hit Points (HP)
+								<input type="text" name="hitPoints">
 							</div>
-							<div class="">
+							<div class="stat">
 								Will Points (WP)
+								<input type="text" name="willPoints">
 							</div>
-							<div class="">
+							<div class="stat">
 								Sanity Points (SP)
+								<input type="text" name="sanityPoints">
 							</div>
-							<div class="">
+							<div class="stat">
 								Breaking Point (BP)
+								<input type="text" name="breakingPoint">
 							</div>
 						</div>
 						<div class=""> <!-- Physical description -->
-						<div class="">
-							10. Physical Description
+							<div class="">
+								10. Physical Description
+								<textarea name="physicalDescription" rows="8" cols="80"></textarea>
+							</div>
 						</div>
-					</div>
 					</div>
 				</section>
 				<section class="dataSection"> <!-- Psychological Data -->
@@ -113,40 +132,63 @@
 						Psychological Data
 					</h2>
 					<div class=""> <!-- Data Blocks -->
-						<div class=""> <!-- Bonds -->
-							<div class="">
-								11. Bonds
+						<div class="dataBlock"> <!-- Bonds -->
+							<div class="bond">
+								<div class="statLabel">
+									11. Bonds
+								</div>
+								<div class="statLabel">
+									Score
+								</div>
 							</div>
-							<div class="">
-								Score
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName1">
+								<input class="bondScore" type="text" name="bondScore1">
+							</div>
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName2">
+								<input class="bondScore" type="text" name="bondScore2">
+							</div>
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName3">
+								<input class="bondScore" type="text" name="bondScore3">
+							</div>
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName4">
+								<input class="bondScore" type="text" name="bondScore4">
+							</div>
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName5">
+								<input class="bondScore" type="text" name="bondScore5">
+							</div>
+							<div class="bond">
+								<input class="bondName"  type="text" name="bondName6">
+								<input class="bondScore" type="text" name="bondScore6">
 							</div>
 						</div>
-						<div class=""> <!-- motivations and mental disorders -->
-							<div class="">
+						<div class="dataBlock"> <!-- motivations and mental disorders -->
+							<div class="statLabel">
 								12. Motivations and Mental Disorders
 							</div>
+							<textarea class="stat" name="motivationsDisorders" rows="8" cols="80"></textarea>
 						</div>
-						<div class=""> <!-- incidents of san loss -->
-							<div class="">
-								13. Incidents of SAN loss Without Goin Insane
+						<div class="dataBlock"> <!-- incidents of san loss -->
+							<div class="statLabel">
+								13. Incidents of SAN loss Without Going Insane
 							</div>
 							<div class="">
-								Violence
+								<span class="statLabel">Violence</span>
+								<input type="checkbox" name="violence1">
+								<input type="checkbox" name="violence2">
+								<input type="checkbox" name="violence3">
+								<span="circleable">adapted</span>
 							</div>
 							<div class="">
-								~Checkboxes~
-							</div>
-							<div class="">
-								adapted
-							</div>
-							<div class="">
-								Helplessness
-							</div>
-							<div class="">
-								~Checkboxes~
-							</div>
-							<div class="">
-								adapted
+								<span class="statLabel">Helplessness</span>
+								<input type="checkbox" name="helplessness1">
+								<input type="checkbox" name="helplessness2">
+								<input type="checkbox" name="helplessness3">
+								<span="circleable">adapted</span>
 							</div>
 						</div>
 					</div>
@@ -207,13 +249,14 @@
 						Injuries
 					</h2>
 					<div class=""> <!-- Data Blocks -->
-						<div class="">
+						<div class="statLabel">
 							14. Wounds and Ailments
 						</div>
+						<textarea class="stat" name="wondsAilments" rows="8" cols="80"></textarea>
 						<div class="">
 							Has First Aid been attempted since the last injury?
-							<input type="checkbox"> yes:
-							Only Medicin, Surgery, or long-term rest cna help further
+							<input type="checkbox" name="firstAidApplied"> yes:
+							Only Medicine, Surgery, or long-term rest can help further
 						</div>
 					</div>
 				</section>
@@ -223,61 +266,132 @@
 					</h2>
 					<div class=""> <!-- Data Blocks -->
 						<div class=""> <!-- armor and gear -->
-							<div class="">
+							<div class="statLabel">
 								15. Armor and Gear
 							</div>
-							<div class="">
+							<textarea name="armorGear" rows="8" cols="80"></textarea>
+							<div class="note">
 								Body armor reduces the damage of all attacks except Called Shots and successful Letahlity rolls.
 							</div>
 						</div>
 						<div class=""> <!-- weapons -->
-							<div class="">
-								16.
+							<div class="weapon">
+								<div class="statLabel">
+									16.
+								</div>
+								<div class="statLabel">
+									Weapons
+								</div>
+								<div class="statLabel">
+									Skill %
+								</div>
+								<div class="statLabel">
+									Base Range
+								</div>
+								<div class="statLabel">
+									Damage
+								</div>
+								<div class="statLabel">
+									Armor Piercing
+								</div>
+								<div class="statLabel">
+									Lethality %
+								</div>
+								<div class="statLabel">
+									Kill Radius
+								</div>
+								<div class="statLabel">
+									ammo
+								</div>
 							</div>
-							<div class="">
-								Weapons
+							<div class="weapon">
+								<div>
+									(a)
+								</div>
+								<input type="text" name="wepName1">
+								<input type="text" name="wepSkill1">
+								<input type="text" name="wepRange1">
+								<input type="text" name="wepDamage1">
+								<input type="text" name="wepArmorPierce1">
+								<input type="text" name="wepLethality1">
+								<input type="text" name="wepKillRadius1">
+								<input type="text" name="wepAmmo1">
 							</div>
-							<div class="">
-								Skill %
+							<div class="weapon">
+								<div>
+									(b)
+								</div>
+								<input type="text" name="wepName2">
+								<input type="text" name="wepSkill2">
+								<input type="text" name="wepRange2">
+								<input type="text" name="wepDamage2">
+								<input type="text" name="wepArmorPierce2">
+								<input type="text" name="wepLethality2">
+								<input type="text" name="wepKillRadius2">
+								<input type="text" name="wepAmmo2">
 							</div>
-							<div class="">
-								Base Range
+							<div class="weapon">
+								<div>
+									(c)
+								</div>
+								<input type="text" name="wepName3">
+								<input type="text" name="wepSkill3">
+								<input type="text" name="wepRange3">
+								<input type="text" name="wepDamage3">
+								<input type="text" name="wepArmorPierce3">
+								<input type="text" name="wepLethality3">
+								<input type="text" name="wepKillRadius3">
+								<input type="text" name="wepAmmo3">
 							</div>
-							<div class="">
-								Damage
+							<div class="weapon">
+								<div>
+									(d)
+								</div>
+								<input type="text" name="wepName4">
+								<input type="text" name="wepSkill4">
+								<input type="text" name="wepRange4">
+								<input type="text" name="wepDamage4">
+								<input type="text" name="wepArmorPierce4">
+								<input type="text" name="wepLethality4">
+								<input type="text" name="wepKillRadius4">
+								<input type="text" name="wepAmmo4">
 							</div>
-							<div class="">
-								Armor Piercing
-							</div>
-							<div class="">
-								Lethality %
-							</div>
-							<div class="">
-								Kill Radius
-							</div>
-							<div class="">
-								ammo
-							</div>
-							<div class="">
-								(a)
-							</div>
-							<div class="">
-								(b)
-							</div>
-							<div class="">
-								(c)
-							</div>
-							<div class="">
-								(d)
-							</div>
-							<div class="">
-								(e)
-							</div>
-							<div class="">
-								(f)
-							</div>
-							<div class="">
-								(g)
+							<div class="weapon">
+								<div>
+									(e)
+								</div>
+								<input type="text" name="wepName5">
+								<input type="text" name="wepSkill5">
+								<input type="text" name="wepRange5">
+								<input type="text" name="wepDamage5">
+								<input type="text" name="wepArmorPierce5">
+								<input type="text" name="wepLethality5">
+								<input type="text" name="wepKillRadius5">
+								<input type="text" name="wepAmmo5">
+							</div><div class="weapon">
+								<div>
+									(f)
+								</div>
+								<input type="text" name="wepName6">
+								<input type="text" name="wepSkill6">
+								<input type="text" name="wepRange6">
+								<input type="text" name="wepDamage6">
+								<input type="text" name="wepArmorPierce6">
+								<input type="text" name="wepLethality6">
+								<input type="text" name="wepKillRadius6">
+								<input type="text" name="wepAmmo6">
+							</div><div class="weapon">
+								<div>
+									(g)
+								</div>
+								<input type="text" name="wepName7">
+								<input type="text" name="wepSkill7">
+								<input type="text" name="wepRange7">
+								<input type="text" name="wepDamage7">
+								<input type="text" name="wepArmorPierce7">
+								<input type="text" name="wepLethality7">
+								<input type="text" name="wepKillRadius7">
+								<input type="text" name="wepAmmo7">
 							</div>
 						</div>
 					</div>
