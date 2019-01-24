@@ -1,24 +1,35 @@
 
 
+.logo {
+	margin: 0 0 2px 0;
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
 .bg-dark {
   background-color: black;
   color: white;
 }
 
-.logo {
-  margin: 0 0 2px 0;
-  text-align: center;
+.dataSection {
+	display: flex;
+	flex-direction: row;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.sidelabel {
+	font-size: 1rem;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
 }
+
 
 .text-center {
-  text-align: center;
-  /* transform: rotate(.75turn); */
+	text-align: center;
+	/* transform: rotate(.75turn); */
 }
-
 
 @media screen, print {
   /* heading for screen readers, that should not appear visualy on screen */
