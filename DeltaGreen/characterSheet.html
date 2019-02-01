@@ -18,120 +18,158 @@
 						Personal Data
 					</h2>
 					<div class="dataBlock-container"> <!-- Data Blocks -->
-						<div class="dataBlock">
-							<div class="stat">
-								1. Last Name, First Name (and alias or code name if applicable)
-								<input type="text" name="name">
-							</div>
-							<div class="stat">
-								2. Profession (rank if applicable)
-							</div>
-							<div class="stat">
-								3. Employer
-								<input type="text" name="Employer">
-							</div>
-							<div class="stat">
-								4. Nationality
-								<input type="text" name="Nationality">
-							</div>
-							<div class="stat">
-								5. Sex
-								<input type="text" name="Sex">
-							</div>
-							<div class="stat">
-								6. Age and D.O.B.
-								<input type="text" name="DOB">
-							</div>
-							<div class="stat">
-								7. Education and Occupational History
-								<input type="text" name="educationOccupation">
-							</div>
+						<div class="dataBlock" id="dBlock-personalData">
+              <div class="row">
+                <div class="stat" id="name">
+                  <div class="statLabel">
+                    1. Last Name, First Name (and alias or code name if applicable)
+                  </div>
+                  <input class="statValue" type="text" name="name">
+                </div>
+                <div class="stat" id="profession" >
+                  <div class="statLabel">
+                    2. Profession (rank if applicable)
+                  </div>
+                  <input class="statValue" type="text" name="profession">
+                </div>
+              </div>
+              <div class="row">
+                <div class="stat" id="employer" >
+                  <div class="statLabel">
+                    3. Employer
+                  </div>
+                  <input class="statValue" type="text" name="employer">
+                </div>
+                <div class="stat" id="nationality" >
+                  <div class="statLabel">
+                    4. Nationality
+                  </div>
+                  <input class="statValue" type="text" name="nationality">
+                </div>
+              </div>
+              <div class="row">
+                <div class="stat" id="sex" >
+                  <div class="statLabel">
+                    5. Sex
+                  </div>
+                  <input class="statValue" type="text" name="sex">
+                </div>
+                <div class="stat" id="dob" >
+                  <div class="statLabel">
+                    6. Age and D.O.B.
+                  </div>
+                  <input class="statValue" type="text" name="dob">
+                </div>
+                <div class="stat" id="educationOccupation" >
+                  <div class="statLabel">
+                    7. Education and Occupational History
+                  </div>
+                  <input class="statValue" type="text" name="educationOccupation">
+                </div>
+              </div>
 						</div>
 					</div>
 				</section>
-				<section class="dataSection"> <!-- Statistical Data -->
-					<h2 class="bg-dark sidelabel uppercase text-center">
-						Statistical Data
-					</h2>
-					<div class="dataBlock-container"> <!-- Data Blocks -->
-						<div class="dataBlock"> <!-- Statistics -->
-							<div class="statLabel">
-								8. Statitics
-							</div>
-							<div class="statLabel">
-								Score
-							</div>
-							<div class="statLabel">
-								x5
-							</div>
-							<div class="statLabel">
-								Distinguishing Feature
-							</div>
-							<div class="stat">
-								Strength (STR)
-								<input type="text" name="strength">
-							</div>
-							<div class="stat">
-								Constitution (CON)
-								<input type="text" name="constitution">
-							</div>
-							<div class="stat">
-								Dexterity (DEX)
-								<input type="text" name="dexterity">
-							</div>
-							<div class="stat">
-								Intelligence (INT)
-								<input type="text" name="intelligence">
-							</div>
-							<div class="stat">
-								Power (POW)
-								<input type="text" name="power">
-							</div>
-							<div class="stat">
-								Charisma (CHA)
-								<input type="text" name="charisma">
-							</div>
-						</div>
-						<div class=""> <!-- derived attributes -->
-							<div class="statLabel">
-								9. Derived Attributes
-							</div>
-							<div class="statLabel">
-								Maximum
-							</div>
-							<div class="statLabel">
-								Current
-							</div>
-							<div class="stat">
-								Hit Points (HP)
-								<input type="text" name="hitPoints">
-							</div>
-							<div class="stat">
-								Will Points (WP)
-								<input type="text" name="willPoints">
-							</div>
-							<div class="stat">
-								Sanity Points (SP)
-								<input type="text" name="sanityPoints">
-							</div>
-							<div class="stat">
-								Breaking Point (BP)
-								<input type="text" name="breakingPoint">
-							</div>
-						</div>
-						<div class=""> <!-- Physical description -->
-							<div class="">
-								10. Physical Description
-								<textarea name="physicalDescription" rows="8" cols="80"></textarea>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="dataSection"> <!-- Psychological Data -->
-					<h2 class="bg-dark sidelabel uppercase text-center">
-						Psychological Data
-					</h2>
-					<div class=""> <!-- Data Blocks -->
+        <div class="row"> <!-- Statistical Data and Psychological Data -->
+          <section class="dataSection"  id="dsection-statistical"> <!-- Statistical Data -->
+            <h2 class="bg-dark sidelabel uppercase text-center">
+              Statistical Data
+            </h2>
+            <div class="dataBlock-container"> <!-- Data Blocks -->
+              <div class="dataBlock" id="dBlock-statistics"> <!-- Statistics -->
+                <div class="statLabel text-center">
+                  8. Statitics
+                </div>
+                <div class="statLabel text-center">
+                  Score
+                </div>
+                <div class="statLabel text-center">
+                  x5
+                </div>
+                <div class="statLabel text-center">
+                  Distinguishing Feature
+                </div>
+                <div class="">
+                  Strength (STR)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+
+                <div class="">
+                  Constitution (CON)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+
+                <div class="">
+                  Dexterity (DEX)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+
+                <div class="">
+                  Intelligence (INT)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+
+                <div class="">
+                  Power (POW)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <div class="">
+                  Charisma (CHA)
+                </div>
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+                <input class="statValue" type="text" name="">
+              </div>
+              <div class="dataBlock" id="dBlock-derivedAttributes"> <!-- derived attributes -->
+                <div class="statLabel">
+                  9. Derived Attributes
+                </div>
+                <div class="statLabel">
+                  Maximum
+                </div>
+                <div class="statLabel">
+                  Current
+                </div>
+                <div class="">
+                  Hit Points (HP)
+                  <input type="text" name="hitPoints">
+                </div>
+                <div class="stat">
+                  Will Points (WP)
+                  <input type="text" name="willPoints">
+                </div>
+                <div class="stat">
+                  Sanity Points (SP)
+                  <input type="text" name="sanityPoints">
+                </div>
+                <div class="stat">
+                  Breaking Point (BP)
+                  <input type="text" name="breakingPoint">
+                </div>
+              </div>
+              <div class=""> <!-- Physical description -->
+                <div class="">
+                  10. Physical Description
+                  <textarea name="physicalDescription" ></textarea>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="dataSection"  id="dsection-psychological"> <!-- Psychological Data -->
+  					<h2 class="bg-dark sidelabel uppercase text-center">
+  						Psychological Data
+  					</h2>
+  					<div class=""> <!-- Data Blocks -->
 						<div class="dataBlock"> <!-- Bonds -->
 							<div class="bond">
 								<div class="statLabel">
@@ -170,7 +208,7 @@
 							<div class="statLabel">
 								12. Motivations and Mental Disorders
 							</div>
-							<textarea class="stat" name="motivationsDisorders" rows="8" cols="80"></textarea>
+							<textarea class="stat" name="motivationsDisorders"></textarea>
 						</div>
 						<div class="dataBlock"> <!-- incidents of san loss -->
 							<div class="statLabel">
@@ -192,7 +230,8 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				  </section>
+        </div>
 				<section class="dataSection"> <!-- Applicable Skill Sets -->
 					<h2 class="bg-dark sidelabel uppercase text-center">
 						Applicable Skill Sets
@@ -252,7 +291,7 @@
 						<div class="statLabel">
 							14. Wounds and Ailments
 						</div>
-						<textarea class="stat" name="wondsAilments" rows="8" cols="80"></textarea>
+						<textarea class="stat" name="wondsAilments"></textarea>
 						<div class="">
 							Has First Aid been attempted since the last injury?
 							<input type="checkbox" name="firstAidApplied"> yes:
@@ -269,7 +308,7 @@
 							<div class="statLabel">
 								15. Armor and Gear
 							</div>
-							<textarea name="armorGear" rows="8" cols="80"></textarea>
+							<textarea name="armorGear" ></textarea>
 							<div class="note">
 								Body armor reduces the damage of all attacks except Called Shots and successful Letahlity rolls.
 							</div>
@@ -407,13 +446,13 @@
 							<div class="statLabel">
 								17. Personal Details and Notes
 							</div>
-							<textarea class="stat" name="detailsNotes" rows="8" cols="80"></textarea>
+							<textarea class="stat" name="detailsNotes" ></textarea>
 						</div>
 						<div class=""> <!-- developments affecting home and family -->
 							<div class="statLabel">
 								18. Developments Which Affect Home and Family
 							</div>
-							<textarea class="stat" name="developments" rows="8" cols="80"></textarea>
+							<textarea class="stat" name="developments" ></textarea>
 						</div>
 						<div class=""> <!-- Special Training -->
 							<div class="training">

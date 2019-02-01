@@ -1,4 +1,8 @@
 
+textarea {
+	width : 100%;
+}
+
 .page {
 	max-width: 8.5in;
 }
@@ -10,6 +14,12 @@
 
 .dataSection {
 	margin-top: .5rem;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 .uppercase {
@@ -27,16 +37,95 @@
 }
 
 .sidelabel {
-	font-size: 1rem;
+	font-size: .75rem;
 	writing-mode: vertical-lr;
 	transform: rotate(.5turn);
+	margin-left: 0;
+	margin-right: 0;
 }
 
+.dataBlock-container {
+	width: 100%;
+}
+
+.dataBlock {
+	width: 100%;
+}
+#dBlock-personalData {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.stat {
+border: solid;
+border-width: 1px;
+}
+
+.statLabel {
+}
+
+.statValue {
+	background-color: lightgoldenrodyellow;
+	border-style: none;
+	width: 100%;
+}
 
 .text-center {
 	text-align: center;
 	/* transform: rotate(.75turn); */
 }
+
+/* Personal data Stats */
+#name {
+	flex: 2;
+}
+
+#profession {
+	flex: 1;
+}
+
+#employer {
+	flex: 2;
+}
+
+#nationality {
+	flex: 1;
+}
+
+#sex {
+	flex: 1;
+}
+
+#dob {
+	flex: 1;
+}
+
+#educationOccupation {
+	flex: 3;
+
+}
+
+#dsection-statistical {
+	flex: 1;
+}
+
+#dsection-psychological {
+	flex: 1;
+}
+
+#dBlock-statistics {
+	display: grid;
+	grid-template-columns: max-content auto auto max-content;
+	grid-gap: 1px;
+}
+
+#dBlock-derivedAttributes {
+	display: grid;
+	grid-template-columns: max-content auto auto;
+	grid-gap: 1px;
+}
+
 
 @media screen, print {
   /* heading for screen readers, that should not appear visualy on screen */
